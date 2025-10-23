@@ -1,0 +1,15 @@
+String frase = "Aprender Java es divertido";
+
+// Buscar carácter
+int pos1 = frase.indexOf('J');        // 9
+int pos2 = frase.indexOf('z');        // -1 (no existe)
+
+// Buscar substring
+int pos3 = frase.indexOf("Java");     // 9
+int pos4 = frase.indexOf("Python");   // -1
+
+// Buscar desde una posición específica
+int pos5 = frase.indexOf('e', 5);     // 11 (primera 'e' después del índice 5)
+
+// lastIndexOf - última aparición
+int pos6 = frase.lastIndexOf('e');    // 16
