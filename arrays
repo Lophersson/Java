@@ -1,0 +1,32 @@
+int[] numeros = {5, 2, 8, 1, 9};
+
+// Atributo principal
+int longitud = numeros.length;         // 5
+
+// Acceso
+int primero = numeros[0];              // 5
+numeros[2] = 100;                      // modificar
+
+// Clase Arrays (java.util.Arrays)
+import java.util.Arrays;
+
+// Ordenar
+Arrays.sort(numeros);                  // [1, 2, 5, 8, 9]
+
+// Buscar (el array debe estar ordenado)
+int indice = Arrays.binarySearch(numeros, 5); // 2
+
+// Copiar
+int[] copia = Arrays.copyOf(numeros, numeros.length);
+int[] parte = Arrays.copyOfRange(numeros, 1, 4); // índices 1 a 3
+
+// Llenar con valor
+Arrays.fill(numeros, 0);               // todos los elementos = 0
+
+// Comparar
+int[] arr1 = {1, 2, 3};
+int[] arr2 = {1, 2, 3};
+boolean iguales = Arrays.equals(arr1, arr2); // true
+
+// Convertir a String
+String texto = Arrays.toString(numeros); // "[1, 2, 5, 8, 9]"
