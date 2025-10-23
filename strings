@@ -1,0 +1,41 @@
+String texto = "Programación en Java";
+
+// INFORMACIÓN
+int longitud = texto.length();              // 20
+boolean vacio = texto.isEmpty();            // false
+char caracter = texto.charAt(5);            // 'a'
+
+// BÚSQUEDA
+int indice = texto.indexOf("Java");         // 16
+int ultimo = texto.lastIndexOf('a');        // 19
+boolean contiene = texto.contains("Java");  // true
+boolean empieza = texto.startsWith("Prog"); // true
+boolean termina = texto.endsWith("Java");   // true
+
+// COMPARACIÓN
+boolean igual = texto.equals("Programación en Java");     // true
+boolean igualIgnoreCase = texto.equalsIgnoreCase("programación en java"); // true
+int comp = texto.compareTo("Otra cadena");  // valor negativo, 0 o positivo
+
+// EXTRACCIÓN
+String sub = texto.substring(0, 12);        // "Programación"
+String sub2 = texto.substring(16);          // "Java"
+String[] partes = texto.split(" ");         // ["Programación", "en", "Java"]
+
+// MODIFICACIÓN (retornan nuevo String)
+String mayus = texto.toUpperCase();         // "PROGRAMACIÓN EN JAVA"
+String minus = texto.toLowerCase();         // "programación en java"
+String reemplazo = texto.replace("Java", "Python"); // "Programación en Python"
+String sinEspacios = texto.trim();          // elimina espacios inicio/fin
+String repetido = texto.repeat(2);          // repite el string 2 veces
+
+// CONVERSIÓN
+char[] caracteres = texto.toCharArray();    // array de caracteres
+byte[] bytes = texto.getBytes();            // array de bytes
+
+// FORMATEO
+String formateado = String.format("Tengo %d años", 25); // "Tengo 25 años"
+
+// CONCATENACIÓN
+String nuevo = texto.concat(" 8");          // "Programación en Java 8"
+String nuevo2 = texto + " 8";               // alternativa con operador +
