@@ -1,0 +1,19 @@
+Integer num = 42;
+
+// Métodos de conversión
+String str = num.toString();           // "42"
+int primitivo = num.intValue();        // 42
+double doble = num.doubleValue();      // 42.0
+
+// Métodos estáticos útiles
+int parseado = Integer.parseInt("123"); // 123
+Integer obj = Integer.valueOf("456");   // objeto Integer
+
+// Comparación
+Integer a = 10;
+Integer b = 20;
+int comparacion = a.compareTo(b);      // -1 (negativo porque a < b)
+
+// Constantes
+int maximo = Integer.MAX_VALUE;        // 2147483647
+int minimo = Integer.MIN_VALUE;        // -2147483648
