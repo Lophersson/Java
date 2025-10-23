@@ -1,0 +1,28 @@
+// Validar email
+String email = "usuario@ejemplo.com";
+boolean valido = email.contains("@") && email.indexOf("@") < email.lastIndexOf(".");
+
+// Contar ocurrencias de un carácter
+String frase = "Mississippi";
+int count = 0;
+int pos = frase.indexOf('s');
+while (pos != -1) {
+    count++;
+    pos = frase.indexOf('s', pos + 1);
+}
+System.out.println("Apariciones de 's': " + count); // 4
+
+// Encontrar números en array
+int[] datos = {10, 25, 30, 45, 50};
+int buscar = 30;
+int encontrado = -1;
+for (int i = 0; i < datos.length; i++) {
+    if (datos[i] == buscar) {
+        encontrado = i;
+        break;
+    }
+}
+
+// Invertir un String
+String original = "Java";
+String invertido = new StringBuilder(original).reverse().toString(); // "avaJ"
