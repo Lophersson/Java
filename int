@@ -1,0 +1,4 @@
+int numero = 42;
+// Los primitivos no tienen métodos, solo operaciones básicas
+int suma = numero + 10;
+int division = numero / 2;
